@@ -1,0 +1,30 @@
+"Updater"
+{
+	"Information"
+	{
+		"Version"
+		{
+			"Latest"	"0.13.0"
+		}
+		
+		"Notes"		"Added new command sm_wml_rebuild to rebuild the database from scratch"
+	}
+	
+	"Files"
+	{
+		"Plugin"	"Path_SM/plugins/wml.smx"
+		"Plugin"	"Path_SM/gamedata/wml.os.gamedata.txt"
+		"Plugin"	"Path_SM/translations/wml.phrases.txt"
+		"Plugin"	"Path_SM/translations/de/wml.phrases.txt"
+		"Plugin"	"Path_SM/translations/ru/wml.phrases.txt"
+		"Plugin"	"Path_SM/translations/ro/wml.phrases.txt"
+		
+		"Source"	"Path_SM/scripting/wml.sp"
+		"Source"	"Path_SM/scripting/wml/wml.adminmenu.sp"
+		"Source"	"Path_SM/scripting/wml/wml.commands.sp"
+		"Source"	"Path_SM/scripting/wml/wml.database.sp"
+		"Source"	"Path_SM/scripting/wml/wml.filesystem.sp"
+		"Source"	"Path_SM/scripting/wml/wml.gamemode.sp"
+		"Source"	"Path_SM/scripting/wml/wml.steamapi.sp"
+	}
+}

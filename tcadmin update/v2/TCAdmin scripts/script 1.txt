@@ -1,0 +1,8 @@
+(execute as server owner)
+(order = 0)
+
+#!/bin/bash
+cd ${TCAdminFolder}/../tcagame/SteamCmd/
+./steamcmd.sh +login anonymous +force_install_dir ${ThisService_RootDirectory} +app_update "740" +quit
+chown --recursive tcagame ${ThisService_RootDirectory}
+touch ${ThisService_RootDirectory}/updatefinished

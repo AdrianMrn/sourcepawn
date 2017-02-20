@@ -1,0 +1,8 @@
+(execute as root)
+(order = 1)
+
+#!/bin/bash
+cd ${ThisService_RootDirectory}
+while [ ! -f /updatefinished ]; do sleep 5; done
+cd ${TCAdminFolder}/Monitor/
+./servicebrowser -service=${ThisServer_ServerId} -command=start
